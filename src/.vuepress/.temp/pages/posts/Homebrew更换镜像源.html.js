@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-6b5eedfe\",\"path\":\"/posts/Homebrew%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90.html\",\"title\":\"Homebrew更换镜像源\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Homebrew更换镜像源\",\"date\":\"2022-05-14T02:59:24.000Z\",\"categories\":\"Tools\",\"tags\":[\"Homebrew\"],\"description\":\"替换brew.git cd \\\"$(brew --repo)\\\" git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git 替换homebrew-core.git cd \\\"$(brew --repo)/Library/Taps/homebrew/homebrew-core\\\" git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git 替换homebrew-bottles访问地址\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/posts/Homebrew%E6%9B%B4%E6%8D%A2%E9%95%9C%E5%83%8F%E6%BA%90.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"常潇的技术站\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Homebrew更换镜像源\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"替换brew.git cd \\\"$(brew --repo)\\\" git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git 替换homebrew-core.git cd \\\"$(brew --repo)/Library/Taps/homebrew/homebrew-core\\\" git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git 替换homebrew-bottles访问地址\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"常潇-KeepCool\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"Homebrew\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2022-05-14T02:59:24.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Homebrew更换镜像源\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2022-05-14T02:59:24.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"常潇-KeepCool\\\",\\\"url\\\":\\\"https://mister-hope.com\\\"}]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.22,\"words\":65},\"filePathRelative\":\"posts/Homebrew更换镜像源.md\",\"localizedDate\":\"2022年5月14日\",\"excerpt\":\"<h1> 替换brew.git</h1>\\n<p>cd \\\"$(brew --repo)\\\"\\ngit remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git</p>\\n<h1> 替换homebrew-core.git</h1>\\n<p>cd \\\"$(brew --repo)/Library/Taps/homebrew/homebrew-core\\\"\\ngit remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git</p>\\n<h1> 替换homebrew-bottles访问地址</h1>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

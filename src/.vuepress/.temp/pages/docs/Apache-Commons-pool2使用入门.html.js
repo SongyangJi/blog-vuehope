@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-33ee0549\",\"path\":\"/docs/Apache-Commons-pool2%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8.html\",\"title\":\"Apache Commons-pool2使用入门\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Apache Commons-pool2使用入门\",\"date\":\"2021-10-02T00:00:00.000Z\",\"tags\":[\"第三方 Jar 整合\",\"池\"],\"description\":\"安装 项目介绍 创建新的对象并初始化的操作，可能会消耗很多的时间。在这种对象的初始化工作包含了一些费时的操作（例如，从一台位于20,000千米以外的主机上读出一些数据）的时候，尤其是这样。在需要大量生成这样的对象的时候，就可能会对性能造成一些不可忽略的影响。要缓解这个问题，除了选用更好的硬件和更棒的虚拟机以外，适当地采用一些能够减少对象创建次数的编码技巧，也是一种有效的对策。对象池化技术（Object Pooling）就是这方面的著名技巧，而Jakarta Commons Pool组件则是处理对象池化的得力外援。\"},\"headers\":[{\"level\":2,\"title\":\"安装\",\"slug\":\"安装\",\"link\":\"#安装\",\"children\":[]},{\"level\":2,\"title\":\"项目介绍\",\"slug\":\"项目介绍\",\"link\":\"#项目介绍\",\"children\":[{\"level\":3,\"title\":\"Maven 依赖\",\"slug\":\"maven-依赖\",\"link\":\"#maven-依赖\",\"children\":[]}]},{\"level\":2,\"title\":\"接口设计\",\"slug\":\"接口设计\",\"link\":\"#接口设计\",\"children\":[{\"level\":3,\"title\":\"ObjectPool\",\"slug\":\"objectpool\",\"link\":\"#objectpool\",\"children\":[]},{\"level\":3,\"title\":\"PooledObject\",\"slug\":\"pooledobject\",\"link\":\"#pooledobject\",\"children\":[]},{\"level\":3,\"title\":\"PooledObjectFactory\",\"slug\":\"pooledobjectfactory\",\"link\":\"#pooledobjectfactory\",\"children\":[]}]},{\"level\":2,\"title\":\"常用的实现类\",\"slug\":\"常用的实现类\",\"link\":\"#常用的实现类\",\"children\":[{\"level\":3,\"title\":\"GenericObjectPool\",\"slug\":\"genericobjectpool\",\"link\":\"#genericobjectpool\",\"children\":[]},{\"level\":3,\"title\":\"borrowObject\",\"slug\":\"borrowobject\",\"link\":\"#borrowobject\",\"children\":[]},{\"level\":3,\"title\":\"returnObject\",\"slug\":\"returnobject\",\"link\":\"#returnobject\",\"children\":[]},{\"level\":3,\"title\":\"DefaultPooledObject\",\"slug\":\"defaultpooledobject\",\"link\":\"#defaultpooledobject\",\"children\":[]}]},{\"level\":2,\"title\":\"使用介绍\",\"slug\":\"使用介绍\",\"link\":\"#使用介绍\",\"children\":[]},{\"level\":2,\"title\":\"参考链接\",\"slug\":\"参考链接\",\"link\":\"#参考链接\",\"children\":[]}],\"readingTime\":{\"minutes\":5.92,\"words\":1775},\"filePathRelative\":\"docs/Apache-Commons-pool2使用入门.md\",\"localizedDate\":\"2021年10月2日\",\"excerpt\":\"<h2> 安装</h2>\\n<h2> 项目介绍</h2>\\n<blockquote>\\n<p>创建新的对象并初始化的操作，可能会消耗很多的时间。在这种对象的初始化工作包含了一些费时的操作（例如，从一台位于20,000千米以外的主机上读出一些数据）的时候，尤其是这样。在需要大量生成这样的对象的时候，就可能会对性能造成一些不可忽略的影响。要缓解这个问题，除了选用更好的硬件和更棒的虚拟机以外，适当地采用一些能够减少对象创建次数的编码技巧，也是一种有效的对策。对象池化技术（Object Pooling）就是这方面的著名技巧，而Jakarta Commons Pool组件则是处理对象池化的得力外援。</p>\\n</blockquote>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

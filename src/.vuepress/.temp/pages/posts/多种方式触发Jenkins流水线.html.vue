@@ -1,0 +1,6 @@
+<template><div><h3 id="代码来源" tabindex="-1"><a class="header-anchor" href="#代码来源" aria-hidden="true">#</a> 代码来源</h3>
+<h3 id="源项目" tabindex="-1"><a class="header-anchor" href="#源项目" aria-hidden="true">#</a> 源项目</h3>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">curl</span> <span class="token variable">${src_url}</span> <span class="token parameter variable">-o</span> <span class="token variable">${service_id}</span>.tar.gz <span class="token operator">&amp;&amp;</span> <span class="token function">mkdir</span> <span class="token variable">${service_id}</span> <span class="token operator">&amp;&amp;</span> <span class="token function">tar</span> <span class="token parameter variable">-xzf</span> <span class="token variable">${service_id}</span>.tar.gz <span class="token parameter variable">-C</span> <span class="token variable">${service_id}</span> <span class="token operator">&amp;&amp;</span> <span class="token function">rm</span> <span class="token variable">${service_id}</span>.tar.gz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+
+

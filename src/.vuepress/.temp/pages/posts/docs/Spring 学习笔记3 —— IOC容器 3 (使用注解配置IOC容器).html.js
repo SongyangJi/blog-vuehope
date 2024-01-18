@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-68f6651a\",\"path\":\"/posts/docs/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03%20%E2%80%94%E2%80%94%20IOC%E5%AE%B9%E5%99%A8%203%20(%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E9%85%8D%E7%BD%AEIOC%E5%AE%B9%E5%99%A8).html\",\"title\":\"Spring 学习笔记3 —— IOC容器 3 (使用注解配置IOC容器)\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Spring 学习笔记3 —— IOC容器 3 (使用注解配置IOC容器)\",\"date\":\"2021-07-10T00:00:00.000Z\",\"categories\":\"Spring\",\"tags\":[\"Spring核心\",\"JavaEE\"],\"description\":\"这里我做的这份笔记的意义仅仅是记录下自己初涉Spring的历程，既不是对官方API的深入解释，也不一定是对新手友好的、知识点详尽的一份学习清单。 1 Spring IoC容器和Bean简介 1.9 基于注解的容器配置 注解在配置Spring上比XML更好吗？ 两种方式并无绝对的更好。不过目前的趋势是使用注解，尤其是对于不是特别大的项目。 1.9.1 @Autowire\"},\"headers\":[{\"level\":2,\"title\":\"1.9 基于注解的容器配置\",\"slug\":\"_1-9-基于注解的容器配置\",\"link\":\"#_1-9-基于注解的容器配置\",\"children\":[{\"level\":3,\"title\":\"1.9.1 @Autowire\",\"slug\":\"_1-9-1-autowire\",\"link\":\"#_1-9-1-autowire\",\"children\":[]},{\"level\":3,\"title\":\"1.9.2 @Primary\",\"slug\":\"_1-9-2-primary\",\"link\":\"#_1-9-2-primary\",\"children\":[]},{\"level\":3,\"title\":\"1.9.3 @Qualifier\",\"slug\":\"_1-9-3-qualifier\",\"link\":\"#_1-9-3-qualifier\",\"children\":[]},{\"level\":3,\"title\":\"1.9.4 @Resource\",\"slug\":\"_1-9-4-resource\",\"link\":\"#_1-9-4-resource\",\"children\":[]},{\"level\":3,\"title\":\"1.9.5 将泛型用作自动装配限定符\",\"slug\":\"_1-9-5-将泛型用作自动装配限定符\",\"link\":\"#_1-9-5-将泛型用作自动装配限定符\",\"children\":[]},{\"level\":3,\"title\":\"1.9.4 @Value\",\"slug\":\"_1-9-4-value\",\"link\":\"#_1-9-4-value\",\"children\":[]}]},{\"level\":2,\"title\":\"1.10 类路径扫描与托管组件\",\"slug\":\"_1-10-类路径扫描与托管组件\",\"link\":\"#_1-10-类路径扫描与托管组件\",\"children\":[{\"level\":3,\"title\":\"1.10.1 @ComponentScan\",\"slug\":\"_1-10-1-componentscan\",\"link\":\"#_1-10-1-componentscan\",\"children\":[]},{\"level\":3,\"title\":\"1.10.2 @Bean\",\"slug\":\"_1-10-2-bean\",\"link\":\"#_1-10-2-bean\",\"children\":[]},{\"level\":3,\"title\":\"1.10.3 命名自动检测的组件\",\"slug\":\"_1-10-3-命名自动检测的组件\",\"link\":\"#_1-10-3-命名自动检测的组件\",\"children\":[]},{\"level\":3,\"title\":\"1.10.4 @Scope\",\"slug\":\"_1-10-4-scope\",\"link\":\"#_1-10-4-scope\",\"children\":[]}]}],\"readingTime\":{\"minutes\":4.61,\"words\":1384},\"filePathRelative\":\"posts/docs/Spring 学习笔记3 —— IOC容器 3 (使用注解配置IOC容器).md\",\"localizedDate\":\"2021年7月10日\",\"excerpt\":\"<blockquote>\\n<p>这里我做的这份笔记的意义仅仅是记录下自己初涉Spring的历程，既不是对官方API的深入解释，也不一定是对新手友好的、知识点详尽的一份学习清单。</p>\\n</blockquote>\\n<h1> 1 Spring IoC容器和Bean简介</h1>\\n<h2> 1.9 基于注解的容器配置</h2>\\n<blockquote>\\n<p><strong>注解</strong>在配置Spring上比<strong>XML</strong>更好吗？ 两种方式并无绝对的更好。不过目前的趋势是使用注解，尤其是对于不是特别大的项目。</p>\\n</blockquote>\\n<h3> 1.9.1 @Autowire</h3>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

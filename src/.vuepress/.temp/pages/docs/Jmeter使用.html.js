@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-42dc6cbc\",\"path\":\"/docs/Jmeter%E4%BD%BF%E7%94%A8.html\",\"title\":\"Jmeter使用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Jmeter使用\",\"date\":\"2021-11-29T10:18:42.000Z\",\"categories\":\"测试\",\"tags\":[\"Jmeter\",\"测试\"],\"description\":\"Add Threads（Users）添加线程组 线程组主要参数详解 线程数：虚拟用户数。一个虚拟用户占用一个进程或线程。模拟多少用户访问也就填写多少个线程数量。 Ramp-Up时间(秒)：设置的虚拟用户数需要多长时间全部启动。如果线程数为100，准备时长为5，那么需要5秒钟启动100个线程，也就是每秒钟启动20个线程。 相当于每秒模拟20个用户进行访问，设置为零我理解为并发访问。 循环次数：如果线程数为100，循环次数为100。那么总请求数为100*100=10000 。如果勾选了“永远”，那么所有线程会一直发送请求，直到选择停止运行脚本。\"},\"headers\":[{\"level\":2,\"title\":\"Add Threads（Users）添加线程组\",\"slug\":\"add-threads-users-添加线程组\",\"link\":\"#add-threads-users-添加线程组\",\"children\":[]},{\"level\":2,\"title\":\"Add Sample 添加取样器（）\",\"slug\":\"add-sample-添加取样器\",\"link\":\"#add-sample-添加取样器\",\"children\":[{\"level\":3,\"title\":\"Add Sample HTTP Request 添加http接口测试（）\",\"slug\":\"add-sample-http-request-添加http接口测试\",\"link\":\"#add-sample-http-request-添加http接口测试\",\"children\":[]}]},{\"level\":2,\"title\":\"断言\",\"slug\":\"断言\",\"link\":\"#断言\",\"children\":[{\"level\":3,\"title\":\"Add Assertions Json Assertion 添加Json断言（）\",\"slug\":\"add-assertions-json-assertion-添加json断言\",\"link\":\"#add-assertions-json-assertion-添加json断言\",\"children\":[]},{\"level\":3,\"title\":\"Add Listener Assertion Results 添加断言结果（）\",\"slug\":\"add-listener-assertion-results-添加断言结果\",\"link\":\"#add-listener-assertion-results-添加断言结果\",\"children\":[]}]},{\"level\":2,\"title\":\"结果报告\",\"slug\":\"结果报告\",\"link\":\"#结果报告\",\"children\":[{\"level\":3,\"title\":\"Add Listener View Results Tree 添加察看结果树（）\",\"slug\":\"add-listener-view-results-tree-添加察看结果树\",\"link\":\"#add-listener-view-results-tree-添加察看结果树\",\"children\":[]},{\"level\":3,\"title\":\"Add Listener Aggregate Report 添加聚合报告（）\",\"slug\":\"add-listener-aggregate-report-添加聚合报告\",\"link\":\"#add-listener-aggregate-report-添加聚合报告\",\"children\":[]}]}],\"readingTime\":{\"minutes\":2.91,\"words\":872},\"filePathRelative\":\"docs/Jmeter使用.md\",\"localizedDate\":\"2021年11月29日\",\"excerpt\":\"<h2> Add Threads（Users）添加线程组</h2>\\n<p><strong>线程组主要参数详解</strong></p>\\n<ol>\\n<li>线程数：虚拟用户数。一个虚拟用户占用一个进程或线程。模拟多少用户访问也就填写多少个线程数量。</li>\\n<li>Ramp-Up时间(秒)：设置的虚拟用户数需要多长时间全部启动。如果线程数为<code>100</code>，准备时长为<code>5</code>，那么需要<code>5</code>秒钟启动<code>100</code>个线程，也就是每秒钟启动<code>20</code>个线程。 相当于每秒模拟<code>20</code>个用户进行访问，设置为零我理解为并发访问。</li>\\n<li>循环次数：如果线程数为<code>100</code>，循环次数为<code>100</code>。那么总请求数为<code>100*100=10000</code> 。如果勾选了“永远”，那么所有线程会一直发送请求，直到选择停止运行脚本。</li>\\n</ol>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

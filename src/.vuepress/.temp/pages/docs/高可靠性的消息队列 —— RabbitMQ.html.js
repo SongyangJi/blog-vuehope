@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-429a672a\",\"path\":\"/docs/%E9%AB%98%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%9A%84%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%20%E2%80%94%E2%80%94%20RabbitMQ.html\",\"title\":\"高可靠性的消息队列 —— RabbitMQ\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"高可靠性的消息队列 —— RabbitMQ\",\"date\":\"2021-10-12T00:00:00.000Z\",\"categories\":\"消息中间件\",\"tags\":[\"Message Queue\",\"RabbitMQ\"],\"description\":\"前言 使用消息代理的系统根据定义是分布式的。 由于发送的协议方法（消息）不能保证到达对等方或被其成功处理， 因此发布者和消费者都需要一种机制来进行传递和处理确认。RabbitMQ 支持的几种消息传递协议提供了这样的特性。 从代理（broker）对发布者（publisher）的确认是一个称为**publisher-confirms（发布者确认）**的扩展 协议。 从消费者（consumer）到 RabbitMQ 的传递处理确认在消息传递协议中称为acknowledgement（简称 ack，计算机网络中经常用到）；\"},\"headers\":[{\"level\":2,\"title\":\"事务机制\",\"slug\":\"事务机制\",\"link\":\"#事务机制\",\"children\":[]},{\"level\":2,\"title\":\"发送方确认机制\",\"slug\":\"发送方确认机制\",\"link\":\"#发送方确认机制\",\"children\":[]},{\"level\":2,\"title\":\"关于ACK\",\"slug\":\"关于ack\",\"link\":\"#关于ack\",\"children\":[{\"level\":3,\"title\":\"RabbitMQ的Client\",\"slug\":\"rabbitmq的client\",\"link\":\"#rabbitmq的client\",\"children\":[]},{\"level\":3,\"title\":\"Spring AMQP\",\"slug\":\"spring-amqp\",\"link\":\"#spring-amqp\",\"children\":[]}]},{\"level\":2,\"title\":\"Ack的相关api\",\"slug\":\"ack的相关api\",\"link\":\"#ack的相关api\",\"children\":[{\"level\":3,\"title\":\"deliveryTag（交付标签）\",\"slug\":\"deliverytag-交付标签\",\"link\":\"#deliverytag-交付标签\",\"children\":[]},{\"level\":3,\"title\":\"确认（ack）方法\",\"slug\":\"确认-ack-方法\",\"link\":\"#确认-ack-方法\",\"children\":[]},{\"level\":3,\"title\":\"拒绝（rejecj\\\\nack）方法\",\"slug\":\"拒绝-rejecj-nack-方法\",\"link\":\"#拒绝-rejecj-nack-方法\",\"children\":[]}]},{\"level\":2,\"title\":\"投递失败的消息如何处理\",\"slug\":\"投递失败的消息如何处理\",\"link\":\"#投递失败的消息如何处理\",\"children\":[]},{\"level\":2,\"title\":\"消费的幂等性如何做到\",\"slug\":\"消费的幂等性如何做到\",\"link\":\"#消费的幂等性如何做到\",\"children\":[]},{\"level\":2,\"title\":\"消息中间件实现分布式事务\",\"slug\":\"消息中间件实现分布式事务\",\"link\":\"#消息中间件实现分布式事务\",\"children\":[]}],\"readingTime\":{\"minutes\":6.09,\"words\":1826},\"filePathRelative\":\"docs/高可靠性的消息队列 —— RabbitMQ.md\",\"localizedDate\":\"2021年10月12日\",\"excerpt\":\"<h1> 前言</h1>\\n<p>使用消息代理的系统根据定义是分布式的。</p>\\n<p>由于发送的协议方法（消息）不能保证到达对等方或被其成功处理，</p>\\n<p>因此<strong>发布者和消费者都需要一种机制来进行传递和处理确认</strong>。RabbitMQ 支持的几种消息传递协议提供了这样的特性。</p>\\n<ul>\\n<li>\\n<p>从代理（broker）对发布者（publisher）的确认是一个称为**publisher-confirms（发布者确认）**的扩展 协议。</p>\\n</li>\\n<li>\\n<p>从消费者（consumer）到 RabbitMQ 的传递处理确认在消息传递协议中称为<strong>acknowledgement（简称 ack，计算机网络中经常用到）</strong>；</p>\\n</li>\\n</ul>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-75f9bc7a\",\"path\":\"/docs/MySQL%E6%85%A2%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96.html\",\"title\":\"MySQL慢查询优化\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"MySQL慢查询优化\",\"date\":\"2022-09-27T22:10:48.000Z\",\"categories\":\"MySQL\",\"tags\":null,\"description\":\"1. 发现+监控慢查询 Mysql提供的慢查询日志 MySQL的慢查询，全名是慢查询日志，是MySQL提供的一种日志记录，用来记录在MySQL中响应时间超过阀值的语句。 相关参数 slow_query_log : 是否开启慢查询日志 slow_query_log_file : 慢查询日志文件名及路径 long_query_time : 指定慢查询时间阈(yu)值，sql执行时间大于该阈值（不包括该值本身，如在sql执行中花费的时间等于，下面的2秒时，不会被记录）将被记录下来,生产环境中1~2秒范围均可 log_queries_not_using_indexes : 将没有使用索引的语句记录至慢查询日志中， log_throttle_queries_not_using_indexes : 限制每分钟内，在慢查询日志中，去记录没有使用索引的SQL语句的次数,因为没有使用索引的SQL可能会短时间重复执行，为了避免日志快速增大，限制每分钟的记录次数 min_examined_row_limit : 扫描全表少于该值的记录将不会被记录至慢查询日志,结合去记录没有使用索引的SQL语句的例子，有可能存在某一个表，数据量维持在百行左右，且没有建立索引。这种表即使不建立索引，查询也很快，扫描记录很小，如果确定有这种表，则可以通过此参数设置，将这个SQL不记录到慢查询日志。\"},\"headers\":[{\"level\":2,\"title\":\"Mysql提供的慢查询日志\",\"slug\":\"mysql提供的慢查询日志\",\"link\":\"#mysql提供的慢查询日志\",\"children\":[]},{\"level\":2,\"title\":\"MyBatis -plus的性能分析插件\",\"slug\":\"mybatis-plus的性能分析插件\",\"link\":\"#mybatis-plus的性能分析插件\",\"children\":[]},{\"level\":2,\"title\":\"索引相关\",\"slug\":\"索引相关\",\"link\":\"#索引相关\",\"children\":[{\"level\":3,\"title\":\"索引没起作用的情况\",\"slug\":\"索引没起作用的情况\",\"link\":\"#索引没起作用的情况\",\"children\":[]},{\"level\":3,\"title\":\"建索引的几大原则\",\"slug\":\"建索引的几大原则\",\"link\":\"#建索引的几大原则\",\"children\":[]}]},{\"level\":2,\"title\":\"优化数据库结构\",\"slug\":\"优化数据库结构\",\"link\":\"#优化数据库结构\",\"children\":[]},{\"level\":2,\"title\":\"分页相关\",\"slug\":\"分页相关\",\"link\":\"#分页相关\",\"children\":[]},{\"level\":2,\"title\":\"其他小trick\",\"slug\":\"其他小trick\",\"link\":\"#其他小trick\",\"children\":[]}],\"readingTime\":{\"minutes\":15.2,\"words\":4561},\"filePathRelative\":\"docs/MySQL慢查询优化.md\",\"localizedDate\":\"2022年9月28日\",\"excerpt\":\"<h1> 1. 发现+监控慢查询</h1>\\n<h2> Mysql提供的慢查询日志</h2>\\n<p><strong>MySQL的慢查询，全名是慢查询日志，是MySQL提供的一种日志记录，用来记录在MySQL中响应时间超过阀值的语句。</strong></p>\\n<p><strong>相关参数</strong></p>\\n<ol>\\n<li>slow_query_log : 是否开启慢查询日志</li>\\n<li>slow_query_log_file : 慢查询日志文件名及路径</li>\\n<li>long_query_time : 指定慢查询时间阈(yu)值，sql执行时间大于该阈值（不包括该值本身，如在sql执行中花费的时间等于，下面的2秒时，不会被记录）将被记录下来,生产环境中1~2秒范围均可</li>\\n<li>log_queries_not_using_indexes : 将没有使用索引的语句记录至慢查询日志中，</li>\\n<li>log_throttle_queries_not_using_indexes : 限制每分钟内，在慢查询日志中，去记录没有使用索引的SQL语句的次数,因为没有使用索引的SQL可能会短时间重复执行，为了避免日志快速增大，限制每分钟的记录次数</li>\\n<li>min_examined_row_limit : 扫描全表少于该值的记录将不会被记录至慢查询日志,结合去记录没有使用索引的SQL语句的例子，有可能存在某一个表，数据量维持在百行左右，且没有建立索引。这种表即使不建立索引，查询也很快，扫描记录很小，如果确定有这种表，则可以通过此参数设置，将这个SQL不记录到慢查询日志。</li>\\n</ol>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
