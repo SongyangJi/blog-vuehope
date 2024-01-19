@@ -107,7 +107,7 @@ partition上的每一条消息都会被分配一个序列号，该序列号被�
 　　payload ： n bytes
 这个`log entry`并非由一个文件构成，而是分成多个segment，每个segment以该segment第一条消息的offset命名并以“.kafka”为后缀。另外会有一个索引文件，它标明了每个segment下包含的`log entry`的offset范围，如下图所示。
 
-![](Kafka-1/partition_segment.png)
+![](unsed-img-dir/Kafka-1/partition_segment.png)
 
 
 
@@ -151,7 +151,7 @@ Producer发送消息到broker时，会根据Paritition机制选择将其存储�
 
 
 
-[![kafka consumer group](Kafka-1/consumer_group.png)](http://www.jasongj.com/img/kafka/KafkaColumn1/consumer_group.png)
+[![kafka consumer group](unsed-img-dir/Kafka-1/consumer_group.png)](http://www.jasongj.com/img/kafka/KafkaColumn1/consumer_group.png)
 　　
 
 这是Kafka用来实现一个Topic消息的广播（发给所有的Consumer）和单播（发给某一个Consumer）的手段。一个Topic可以对应多个Consumer Group。如果需要实现广播，只要每个Consumer有一个独立的Group就可以了。要实现单播只要所有的Consumer在同一个Group里。用Consumer Group还可以将Consumer进行自由的分组而不需要多次发送消息到不同的Topic。

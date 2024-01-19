@@ -576,7 +576,7 @@ state属性是贯穿整个FutureTask的最核心的属性，该属性的值代�
 
 虽说状态有这么多，但是状态的转换路径却只有四种：
 
-<img src="FutureTask-state.png" alt="state of FutureTask" style="zoom:70%;" />
+<img src="./FutureTask-state.png" alt="state of FutureTask" style="zoom:70%;" />
 
 + 任务的初始状态都是`NEW`, 这一点是构造函数保证的，我们后面分析构造函数的时候再讲；
 + 任务的终止状态有4种：

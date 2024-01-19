@@ -1,6 +1,7 @@
 ---
 title: Apache Commons-pool2使用入门
 date: 2021-10-02
+categories: Apache
 tags: 
   - 第三方 Jar 整合
   - 池

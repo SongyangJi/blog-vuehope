@@ -353,7 +353,7 @@ axios.post(
 
 
 
-<img src="JWT/jwt1.png" style="zoom:60%;" />
+<img src="./unsed-img-dir/JWT/jwt1.png" style="zoom:60%;" />
 
 
 

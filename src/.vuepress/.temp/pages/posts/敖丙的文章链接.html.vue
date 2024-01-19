@@ -16,8 +16,8 @@
   <a href="https://my.oschina.net/javaFamily"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="投稿"></a>
   <a href="https://www.cnblogs.com/aobing/"><img src="https://img.shields.io/badge/cnblogs-博客园-important.svg" alt="投稿"></a>
 </p>
-<p><img src="@source/posts/敖丙的文章链接/0082zybply1gcb2u3keh9j30p02j4h2r.jpg" alt="" loading="lazy">
-<img src="@source/posts/敖丙的文章链接/007S8ZIlgy1gf8flovpg1j30u07l7hdx.jpg" alt="" loading="lazy"></p>
+<p><img src="@source/posts/unsed-img-dir/敖丙的文章链接/0082zybply1gcb2u3keh9j30p02j4h2r.jpg" alt="" loading="lazy">
+<img src="@source/posts/unsed-img-dir/敖丙的文章链接/007S8ZIlgy1gf8flovpg1j30u07l7hdx.jpg" alt="" loading="lazy"></p>
 <h4 id="后端面试点合集" tabindex="-1"><a class="header-anchor" href="#后端面试点合集" aria-hidden="true">#</a> <a href="https://mp.weixin.qq.com/s/gBr3UfC1HRcw4U-ZMmtRaQ" target="_blank" rel="noopener noreferrer">后端面试点合集<ExternalLinkIcon/></a></h4>
 <h4 id="脑图在线编辑地址" tabindex="-1"><a class="header-anchor" href="#脑图在线编辑地址" aria-hidden="true">#</a> <a href="https://www.processon.com/view/5e86b713e4b0bf3ebcf4e376" target="_blank" rel="noopener noreferrer">脑图在线编辑地址<ExternalLinkIcon/></a></h4>
 <h1 id="目录-善用ctrl-f" tabindex="-1"><a class="header-anchor" href="#目录-善用ctrl-f" aria-hidden="true">#</a> 目录(善用Ctrl+F)</h1>
@@ -1773,7 +1773,7 @@
     <img src="https://avatars3.githubusercontent.com/u/24934495?s=400&v=4" width="45px">
 </a>
 <a href="https://github.com/programes">  
-    <img src="敖丙的文章链接/6359325.png" width="45px">
+    <img src="unsed-img-dir/敖丙的文章链接/6359325.png" width="45px">
 </a>
 <a href="https://github.com/bertChen812">  
     <img src="https://avatars3.githubusercontent.com/u/37893362?s=400&v=4" width="45px">
@@ -1819,9 +1819,9 @@
 </a>
 <h1 id="赞助商" tabindex="-1"><a class="header-anchor" href="#赞助商" aria-hidden="true">#</a> 赞助商</h1>
 <p>以下排名不分先后!
-<img src="@source/posts/敖丙的文章链接/007S8ZIlly1ge4xvdlh0wj30zk0d1q6d.jpg" alt="" loading="lazy"></p>
+<img src="@source/posts/unsed-img-dir/敖丙的文章链接/007S8ZIlly1ge4xvdlh0wj30zk0d1q6d.jpg" alt="" loading="lazy"></p>
 <p><a name="微信"></a>  <a name="公众号"></a></p>
-<figure><img src="@source/posts/敖丙的文章链接/00831rSTly1gck2pplt8ej315u0u0k1b.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="@source/posts/unsed-img-dir/敖丙的文章链接/00831rSTly1gck2pplt8ej315u0u0k1b.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 </div></template>
 
 

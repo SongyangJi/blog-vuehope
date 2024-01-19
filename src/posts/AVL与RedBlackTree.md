@@ -39,10 +39,7 @@ void zag(Node *&q) {
 
 
 
-
-<img src="zig-zag.png" style="zoom:20%;" />
-
-
+![zig-zag](zig-zag.png)
 
 
 

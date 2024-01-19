@@ -61,7 +61,7 @@
 　　crc ： 4 bytes
 　　payload ： n bytes
 这个<code v-pre>log entry</code>并非由一个文件构成，而是分成多个segment，每个segment以该segment第一条消息的offset命名并以“.kafka”为后缀。另外会有一个索引文件，它标明了每个segment下包含的<code v-pre>log entry</code>的offset范围，如下图所示。</p>
-<figure><img src="@source/posts/Kafka-1/partition_segment.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
+<figure><img src="@source/posts/unsed-img-dir/Kafka-1/partition_segment.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <p>因为每条消息都被append到该Partition中，属于顺序写磁盘，因此效率非常高（经验证，顺序写磁盘效率比随机写内存还要高，这是Kafka高吞吐率的一个很重要的保证）。</p>
 <p>对于传统的message queue而言，一般会删除已经被消费的消息，而Kafka集群会保留所有的消息，无论其被消费与否。当然，因为磁盘限制，不可能永久保留所有数据（实际上也没必要），因此Kafka提供两种策略删除旧数据。一是基于时间，二是基于Partition文件大小。例如可以通过配置<code v-pre>$KAFKA_HOME/config/server.properties</code>，让Kafka删除一周前的数据，也可在Partition文件超过1GB时删除旧数据，配置如下所示。</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code># The minimum age of a log file to be eligible for deletion
@@ -79,7 +79,7 @@ log.cleaner.enable=false
 <h2 id="consumer-group" tabindex="-1"><a class="header-anchor" href="#consumer-group" aria-hidden="true">#</a> Consumer Group</h2>
 <p>（本节所有描述都是基于Consumer hight level API而非low level API）。
 使用Consumer high level API时，同一Topic的一条消息只能被同一个Consumer Group内的一个Consumer消费，但多个Consumer Group可同时消费这一消息。</p>
-<figure><a href="http://www.jasongj.com/img/kafka/KafkaColumn1/consumer_group.png" target="_blank" rel="noopener noreferrer"><img src="@source/posts/Kafka-1/consumer_group.png" alt="kafka consumer group" tabindex="0" loading="lazy"><ExternalLinkIcon/></a><figcaption>kafka consumer group</figcaption></figure>
+<figure><a href="http://www.jasongj.com/img/kafka/KafkaColumn1/consumer_group.png" target="_blank" rel="noopener noreferrer"><img src="@source/posts/unsed-img-dir/Kafka-1/consumer_group.png" alt="kafka consumer group" tabindex="0" loading="lazy"><ExternalLinkIcon/></a><figcaption>kafka consumer group</figcaption></figure>
 <p>这是Kafka用来实现一个Topic消息的广播（发给所有的Consumer）和单播（发给某一个Consumer）的手段。一个Topic可以对应多个Consumer Group。如果需要实现广播，只要每个Consumer有一个独立的Group就可以了。要实现单播只要所有的Consumer在同一个Group里。用Consumer Group还可以将Consumer进行自由的分组而不需要多次发送消息到不同的Topic。</p>
 <h2 id="push-vs-pull" tabindex="-1"><a class="header-anchor" href="#push-vs-pull" aria-hidden="true">#</a> Push vs. Pull</h2>
 <p>作为一个消息系统，Kafka遵循了传统的方式，选择由Producer向broker push消息并由Consumer从broker pull消息。一些logging-centric system，比如Facebook的<a href="https://github.com/facebookarchive/scribe" target="_blank" rel="noopener noreferrer">Scribe<ExternalLinkIcon/></a>和Cloudera的<a href="http://flume.apache.org/" target="_blank" rel="noopener noreferrer">Flume<ExternalLinkIcon/></a>，采用push模式。事实上，push模式和pull模式各有优劣。</p>

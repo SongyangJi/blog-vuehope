@@ -56,7 +56,7 @@
 <p>再比如，当一个进程对资源的使用顺序为5→2→4→3→1的时候，它的申请顺序仍然是12345，也就是说即使1是最后使用，也要先申请。这种浪费在程序越大、申请资源越多的时候越是明显。</p>
 <h1 id="死锁避免" tabindex="-1"><a class="header-anchor" href="#死锁避免" aria-hidden="true">#</a> 死锁避免</h1>
 <h2 id="安全状态-safe-state" tabindex="-1"><a class="header-anchor" href="#安全状态-safe-state" aria-hidden="true">#</a> 安全状态(safe state)</h2>
-<p>如果系统能按照某个顺序为每个进程分配资源并能避免死锁，系统状态就是安全的。或者说，<strong>如果存在一个安全序列safe sequence&lt;P0,P1,P2,…,Pn&gt;，使得前面的进程能够得到足够的资源完成，同时它释放的资源又能满足后面的进程的话，就是安全的</strong>。</p>
+<p>如果系统能按照某个顺序为每个进程分配资源并能避免死锁，系统状态就是安全的。或者说，<strong>如果存在一个安全序列safe sequence<code v-pre>&lt;P0,P1,P2,…,Pn&gt;</code>，使得前面的进程能够得到足够的资源完成，同时它释放的资源又能满足后面的进程的话，就是安全的</strong>。</p>
 <p>下面给出一个简单的例子：</p>
 <table>
 <thead>
@@ -92,7 +92,7 @@
 </tr>
 </tbody>
 </table>
-<p>现在给出一个安全序列&lt;P1,P0,P2&gt;，之所以说它是安全序列，可以这样分析：P1分配到2个资源以后可以完成任务释放4个资源，那么总共可用资源变成5个，分配给P0以后待其完成任务释放10个资源可以让P2使用，这个分配顺序能确保不会产生死锁，所以系统状态是安全的。</p>
+<p>现在给出一个安全序列<code v-pre>&lt;P1,P0,P2&gt;</code>，之所以说它是安全序列，可以这样分析：P1分配到2个资源以后可以完成任务释放4个资源，那么总共可用资源变成5个，分配给P0以后待其完成任务释放10个资源可以让P2使用，这个分配顺序能确保不会产生死锁，所以系统状态是安全的。</p>
 <p>但是，<strong>不安全状态并不一定会导致死锁</strong>。因为我们这里的最大资源需求量很有可能会超出真正需求量，反之，死锁状态一定是不安全状态。</p>
 <p><strong>有了安全状态的概念，就可以定义避免算法以确保系统不会死锁，其思想就是简单的确保系统始终处于安全状态。</strong></p>
 <h2 id="单实例——资源分配图-rag——resource-allocation-graph" tabindex="-1"><a class="header-anchor" href="#单实例——资源分配图-rag——resource-allocation-graph" aria-hidden="true">#</a> 单实例——资源分配图(RAG——resource-allocation graph)</h2>

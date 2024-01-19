@@ -64,7 +64,7 @@ gcc -E hello.c | more
 <p>这四个参数是对 char 类型进行设置, 决定将 char 类型设置成 unsigned char(前两个参数)或者 signed char(后两个参数)。</p>
 <p></p>
 <p><strong>-include file</strong></p>
-<p>包含某个代码,简单来说,就是便以某个文件,需要另一个文件的时候,就可以用它设定,功能就相当于在代码中使用 <strong>#include<filename></strong>。</p>
+<p>包含某个代码,简单来说,就是便以某个文件,需要另一个文件的时候,就可以用它设定,功能就相当于在代码中使用 <strong>#include<code v-pre>&lt;filename&gt;</code></strong>。</p>
 <p>例子用法:</p>
 <p></p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>gcc hello.c -include /root/pianopan.h 
@@ -87,7 +87,7 @@ gcc -E hello.c | more
 <p></p>
 <p><strong>-Idir</strong></p>
 <p>在你是用 <strong>#include &quot;file&quot;</strong> 的时候, gcc/g++ 会先在当前目录查找你所制定的头文件, 如果没有找到, 他回到默认的头文件目录找, 如果使用 -I 制定了目录,他会先在你所制定的目录查找, 然后再按常规的顺序去找。</p>
-<p>对于 #include<file>, gcc/g++ 会到 -I 制定的目录查找, 查找不到, 然后将到系统的默认的头文件目录查找 。</p>
+<p>对于 #include<code v-pre>&lt;file&gt;</code>, gcc/g++ 会到 -I 制定的目录查找, 查找不到, 然后将到系统的默认的头文件目录查找 。</p>
 <p></p>
 <p><strong>-I-</strong></p>
 <p></p>
@@ -117,7 +117,7 @@ gcc -E hello.c | more
 <p></p>
 <p><strong>-MM</strong></p>
 <p></p>
-<p>和上面的那个一样，但是它将忽略由 <strong>#include<file></strong> 造成的依赖关系。</p>
+<p>和上面的那个一样，但是它将忽略由 <strong>#include<code v-pre>&lt;file&gt;</code></strong> 造成的依赖关系。</p>
 <p><strong>-MD</strong></p>
 <p></p>
 <p>和-M相同，但是输出将导入到.d的文件里面</p>

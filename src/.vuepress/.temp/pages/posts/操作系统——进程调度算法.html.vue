@@ -1,5 +1,5 @@
 <template><div><h2 id="进程状态机" tabindex="-1"><a class="header-anchor" href="#进程状态机" aria-hidden="true">#</a> 进程状态机</h2>
-<figure><img src="@source/posts/操作系统——进程调度算法/640.png" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="@source/posts/unsed-img-dir/操作系统——进程调度算法/640.png" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
 <ol>
 <li>阻塞一般是当系统执行IO操作时，此时进程进入阻塞状态，等待某个事件的返回。</li>
 <li>挂起是指进程没有占有物理内存，被写到磁盘上了。这时进程状态是挂起状态。</li>

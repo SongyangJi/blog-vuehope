@@ -216,7 +216,7 @@ public static void main(String[] args) {
 
 下图展示的类加载器之间的层次关系，称为类加载器的双亲委派模型（Parents Delegation Model）。该模型要求除了顶层的启动类加载器外，其余的类加载器都应有自己的父类加载器。这里类加载器之间的父子关系一般通过组合（Composition）关系来实现，而不是通过继承（Inheritance）的关系实现。
 
-<img src="class_loader.jpg" style="zoom:50%;" />
+<img src="./class_loader.jpg" style="zoom:50%;" />
 
 
 
@@ -338,7 +338,7 @@ public class FileSystemClassLoader extends ClassLoader {
 
 #### 案例一：tomcat
 
-<img src="tomcat_class_loader.jpg" style="zoom:80%;" />
+<img src="./tomcat_class_loader.jpg" style="zoom:80%;" />
 
 
 

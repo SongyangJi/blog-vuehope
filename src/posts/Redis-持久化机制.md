@@ -15,7 +15,7 @@ Redis是一个内存数据库，所有的数据将保存在内存中，这与传
 
 Redis支持两种方式的持久化：RDB快照和AOF。
 
-<img src="summary.jpeg" alt="img" style="zoom:60%;" />
+<img src="./summary.jpeg" alt="img" style="zoom:60%;" />
 
 
 
@@ -179,7 +179,7 @@ int rdbSaveBackground(char *filename, rdbSaveInfo *rsi) {
 
 
 
-<img src="rdbsave.png" style="zoom:30%;" />
+<img src="./rdbsave.png" style="zoom:30%;" />
 
 
 

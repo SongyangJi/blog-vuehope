@@ -218,7 +218,7 @@ axios<span class="token punctuation">.</span><span class="token function">post</
 	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="JWT/jwt1.png" style="zoom:60%;" />
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><img src="unsed-img-dir/JWT/jwt1.png" style="zoom:60%;" />
 <h3 id="前端提取jwt携带的信息" tabindex="-1"><a class="header-anchor" href="#前端提取jwt携带的信息" aria-hidden="true">#</a> 前端提取JWT携带的信息</h3>
 <p>前面也有提到，JWT的payload模块可以携带一些业务逻辑所必要的非敏感信息。因此，前端需要能够解析出JWT字符串。
 举个例子，在sduoj中，需要判断用户的登录信息是否合法，其中一项评判标准就是JWT是否过期。在后端的服务器代码中存在这一部分逻辑，而在前端的代码中，也包含了这一段逻辑代码。

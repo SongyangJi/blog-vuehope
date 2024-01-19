@@ -541,7 +541,7 @@
 <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token constant">INTERRUPTED</span>  <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>state属性是贯穿整个FutureTask的最核心的属性，该属性的值代表了任务在运行过程中的状态，随着任务的执行，状态将不断地进行转变，从上面的定义中可以看出，总共有7种状态：包括了1个初始态，2个中间态和4个终止态。</p>
 <p>虽说状态有这么多，但是状态的转换路径却只有四种：</p>
-<img src="FutureTask-state.png" alt="state of FutureTask" style="zoom:70%;" />
+<img src="@source/posts/FutureTask-state.png" alt="state of FutureTask" style="zoom:70%;" />
 <ul>
 <li>任务的初始状态都是<code v-pre>NEW</code>, 这一点是构造函数保证的，我们后面分析构造函数的时候再讲；</li>
 <li>任务的终止状态有4种：

@@ -126,7 +126,7 @@ public interface Condition {
 
 
 
-<img src="LockAndCondition.png" style="zoom:25%;" />
+<img src="./LockAndCondition.png" style="zoom:25%;" />
 
 
 

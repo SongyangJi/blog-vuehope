@@ -368,7 +368,7 @@ struct file_operations {
 
 
 
-<img src="fd2.png" style="zoom:80%;" />
+<img src="./fd2.png" style="zoom:80%;" />
 
 
 

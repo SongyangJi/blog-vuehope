@@ -69,7 +69,7 @@ DNS 采用了分布式的设计方案，其域名空间采用一种树形的层�
 
 ## 举例
 
-<img src="dns2.png" style="zoom:30%;" />
+<img src="./dns2.png" style="zoom:30%;" />
 
 我们以一个例子来了解 DNS 的工作原理，假设主机 A（IP 地址为 abc.xyz.edu） 想知道主机 B 的 IP 地址 （def.mn.edu）。
 
@@ -350,7 +350,7 @@ DHCP 服务器的地址，所以使⽤的是 UDP ⼴播通信，其使⽤的⼴�
 
 
 
-<img src="dhcp.png" style="zoom:60%;" />
+<img src="./dhcp.png" style="zoom:60%;" />
 
 
 

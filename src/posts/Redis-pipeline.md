@@ -10,7 +10,7 @@ categories: Redis
 
 
 
-<img src="redis_pipeline.png" alt="redis_pipeline" style="zoom:50%;" />
+<img src="./redis_pipeline.png" alt="redis_pipeline" style="zoom:50%;" />
 
 
 

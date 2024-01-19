@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
+  // 和deploy到github上的repo有关
   base: "/",
 
   lang: "zh-CN",

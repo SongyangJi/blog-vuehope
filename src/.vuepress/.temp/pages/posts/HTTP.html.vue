@@ -471,7 +471,7 @@
 <p>冒充⻛险，⽐如冒充淘宝⽹站。</p>
 </li>
 </ol>
-<img src="https1.png" style="zoom:80%;" />
+<img src="@source/posts/https1.png" style="zoom:80%;"  alt="http vs https"/>
 <p>HTTP<strong>S</strong> 在 HTTP 与 TCP 层之间加⼊了 SSL/TLS 协议，可以很好的解决了上述的⻛险：</p>
 <p>信息加密：交互信息⽆法被窃取。</p>
 <p>校验机制：⽆法篡改通信内容，篡改了就不能正常显示。</p>

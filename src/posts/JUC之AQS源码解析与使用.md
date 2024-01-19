@@ -771,7 +771,7 @@ private Node enq(final Node node) {
 
 
 
-<img src="aqs-acquire.png" alt="aqs-acquire" style="zoom:50%;" />
+<img src="./aqs-acquire.png" alt="aqs-acquire" style="zoom:50%;" />
 
 
 

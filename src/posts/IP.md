@@ -260,7 +260,7 @@ IP地址一共分为5类，即A～E，它们分类的依据是其net-id所占的
 
 
 
-<img src="ip-addr.png" style="zoom:45%;" />
+<img src="./ip-addr.png" style="zoom:45%;" />
 
 
 

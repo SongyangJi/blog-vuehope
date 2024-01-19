@@ -604,10 +604,7 @@ HTTP 由于是明⽂传输，所以安全上存在以下三个⻛险：
 
 
 
-<img src="https1.png" style="zoom:80%;" />
-
-
-
+<img src="./https1.png" style="zoom:80%;"  alt="http vs https"/>
 
 
 HTTP**S** 在 HTTP 与 TCP 层之间加⼊了 SSL/TLS 协议，可以很好的解决了上述的⻛险：
@@ -642,7 +639,7 @@ HTTP**S** 在 HTTP 与 TCP 层之间加⼊了 SSL/TLS 协议，可以很好的�
 
 
 
-<img src="秘钥.png" style="zoom:80%;" />
+<img src="./秘钥.png" style="zoom:80%;" />
 
 
 
@@ -668,7 +665,7 @@ HTTPS 采⽤的是对称加密和⾮对称加密结合的**混合加密**⽅式�
 
 **摘要算法**⽤来实现完整性，能够为数据⽣成独⼀⽆⼆的*指纹*，**⽤于校验数据的完整性**，解决了篡改的⻛险。
 
-<img src="摘要.png" style="zoom:80%;" />
+<img src="./摘要.png" style="zoom:80%;" />
 
 
 
@@ -690,7 +687,7 @@ HTTPS 采⽤的是对称加密和⾮对称加密结合的**混合加密**⽅式�
 
 
 
-<img src="数字证书.png" style="zoom:70%;" />
+<img src="./数字证书.png" style="zoom:70%;" />
 
 
 
@@ -954,7 +951,7 @@ HTTP/2 主要的问题在于，多个 HTTP 请求在复⽤⼀个 TCP 连接，�
 
 
 
-<img src="http3.0.png" style="zoom:70%;" />
+<img src="./http3.0.png" style="zoom:70%;" />
 
 
 
@@ -1051,7 +1048,7 @@ HTTP/3 主要有以下几个特点：
 
 
 
-<img src="http123.png" style="zoom:80%;" />
+<img src="./http123.png" style="zoom:80%;" />
 
 
 
@@ -1061,7 +1058,7 @@ HTTP/3 主要有以下几个特点：
 
 最后我们使用一张图来清晰的表示出 HTTP 协议的发展变化：
 
-<img src="http-all.png" style="zoom:48%;" />
+<img src="./http-all.png" style="zoom:48%;" />
 
 
 

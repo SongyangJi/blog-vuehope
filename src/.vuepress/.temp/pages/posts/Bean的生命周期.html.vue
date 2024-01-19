@@ -17,7 +17,7 @@
 <p>DEMO</p>
 <figure><img src="@source/posts/Bean的生命周期demo.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
 <blockquote>
-<p>1、Bean自身的方法：这个包括了Bean本身调用的方法和通过配置文件中<bean>的init-method和destory-method指定的方法。
+<p>1、Bean自身的方法：这个包括了Bean本身调用的方法和通过配置文件中<code v-pre>&lt;bean&gt;</code>的init-method和destory-method指定的方法。
 2、Bean级生命周期接口方法：这个包括了BeanNameAware、BeanFactoryAware、InitializingBean和DisposableBean等接口方法。
 3、容器级生命周期接口方法：这个包括了InstantiationAwareBeanPostProcessor和BeanPostProcessor这两个接口实现，一般称它们的实现类为”后处理器“。
 4、工厂后置处理接口方法：BeanFactoryPostProcessor,BeanDefinitionRegistryPostProcessor,等等非常有用的工厂后处理器接口的方法。工厂后处理器也是容器级的。在应用上下文装配配置文件之后立即调用。</p>

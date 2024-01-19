@@ -74,7 +74,7 @@ MySQL对底层页面的一次原子性的访问成为一个Mini-Transaction（MT
 
 
 
-<img src="mtr.png" style="zoom:30%;" />
+<img src="./mtr.png" style="zoom:30%;" />
 
 
 

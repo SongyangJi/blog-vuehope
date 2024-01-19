@@ -30,7 +30,7 @@
 <li>客户端根据自己的私钥加密这个随机字符串之后再发送给服务器（客户端私钥加密）</li>
 <li>服务器接受到加密后的字符串之后用公钥解密，如果正确就让客户端登录，否则拒绝。这样就不用使用密码了。</li>
 </ol>
-<figure><img src="@source/posts/ssh公钥私钥原理/ssh公钥私钥原理1.png" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
+<figure><img src="@source/posts/unsed-img-dir/ssh公钥私钥原理/ssh公钥私钥原理1.png" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
 <h3 id="公钥和私钥" tabindex="-1"><a class="header-anchor" href="#公钥和私钥" aria-hidden="true">#</a> 公钥和私钥</h3>
 <p>一个公钥对应一个私钥。密钥对中，让大家都知道的是公钥，不告诉大家，只有自己知道的，是私钥。</p>
 <ol>

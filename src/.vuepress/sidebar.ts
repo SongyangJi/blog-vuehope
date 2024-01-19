@@ -11,9 +11,10 @@ export default sidebar({
     //   children: "structure",
     // },
     {
-      text: "文章",
+      text: "技术文章",
       icon: "book",
       prefix: "posts/",
+      link: "技术/",
       children: "structure",
     },
     "intro",
