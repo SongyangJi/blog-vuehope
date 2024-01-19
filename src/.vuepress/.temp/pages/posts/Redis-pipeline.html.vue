@@ -1,5 +1,5 @@
 <template><div><img src="redis_mget.png" alt="redis_mget" style="zoom:50%;" />
-<img src="redis_pipeline.png" alt="redis_pipeline" style="zoom:50%;" />
+<img src="@source/posts/redis_pipeline.png" alt="redis_pipeline" style="zoom:50%;" />
 <ul>
 <li>
 <p>普通请求：等待上一条命令应答后再执行，中间不仅仅多了RTT，而且还频繁的调用系统IO，发送网络请求</p>

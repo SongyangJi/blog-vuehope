@@ -127,7 +127,7 @@
 </blockquote>
 <p>应用程序都是由三种类加载器相互配合进行加载的，如果有必要，还可以加入自己定义的类加载器。</p>
 <p>下图展示的类加载器之间的层次关系，称为类加载器的双亲委派模型（Parents Delegation Model）。该模型要求除了顶层的启动类加载器外，其余的类加载器都应有自己的父类加载器。这里类加载器之间的父子关系一般通过组合（Composition）关系来实现，而不是通过继承（Inheritance）的关系实现。</p>
-<img src="class_loader.jpg" style="zoom:50%;" />
+<img src="@source/posts/class_loader.jpg" style="zoom:50%;" />
 <p><strong>（一）工作过程</strong></p>
 <p>一个类加载器首先将类加载请求传送到父类加载器，只有当父类加载器无法完成类加载请求时才尝试加载。</p>
 <p><strong>（二）好处</strong></p>
@@ -221,7 +221,7 @@
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="一些自定义加载器" tabindex="-1"><a class="header-anchor" href="#一些自定义加载器" aria-hidden="true">#</a> 一些自定义加载器</h3>
 <h4 id="案例一-tomcat" tabindex="-1"><a class="header-anchor" href="#案例一-tomcat" aria-hidden="true">#</a> 案例一：tomcat</h4>
-<img src="tomcat_class_loader.jpg" style="zoom:80%;" />
+<img src="@source/posts/tomcat_class_loader.jpg" style="zoom:80%;" />
 <p>我们看到，前面3个类加载和默认的一致，CommonClassLoader、CatalinaClassLoader、SharedClassLoader和WebappClassLoader则是Tomcat自己定义的类加载器，它们分别加载/common/<em>、/server/</em>、/shared/*（在tomcat 6之后已经合并到根目录下的lib目录下）和/WebApp/WEB-INF/*中的Java类库。其中WebApp类加载器和Jsp类加载器通常会存在多个实例，每一个Web应用程序对应一个WebApp类加载器，每一个JSP文件对应一个Jsp类加载器。</p>
 <ol>
 <li>commonLoader：Tomcat最基本的类加载器，加载路径中的class可以被Tomcat容器本身以及各个Webapp访问；</li>

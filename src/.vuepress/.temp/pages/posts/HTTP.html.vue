@@ -495,7 +495,7 @@
 <p>这部分内容可以参考 <a href="http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html" target="_blank" rel="noopener noreferrer">数字签名是什么？<ExternalLinkIcon/></a></p>
 </blockquote>
 <h3 id="_1-混合加密" tabindex="-1"><a class="header-anchor" href="#_1-混合加密" aria-hidden="true">#</a> 1. 混合加密</h3>
-<img src="秘钥.png" style="zoom:80%;" />
+<img src="@source/posts/秘钥.png" style="zoom:80%;" />
 <p>HTTPS 采⽤的是对称加密和⾮对称加密结合的<strong>混合加密</strong>⽅式：</p>
 <ul>
 <li>
@@ -516,7 +516,7 @@
 </ul>
 <h3 id="_2-摘要算法" tabindex="-1"><a class="header-anchor" href="#_2-摘要算法" aria-hidden="true">#</a> 2. 摘要算法</h3>
 <p><strong>摘要算法</strong>⽤来实现完整性，能够为数据⽣成独⼀⽆⼆的<em>指纹</em>，<strong>⽤于校验数据的完整性</strong>，解决了篡改的⻛险。</p>
-<img src="摘要.png" style="zoom:80%;" />
+<img src="@source/posts/摘要.png" style="zoom:80%;" />
 <p>客户端在发送明⽂之前会通过摘要算法算出明⽂的「指纹」，发送的时候把「指纹 + 明⽂」⼀同加密成密⽂后，发</p>
 <p>送给服务器，服务器解密后，⽤相同的摘要算法算出发送过来的明⽂，通过⽐较客户端携带的「指纹」和当前算出</p>
 <p>的「指纹」做⽐较，若「指纹」相同，说明数据是完整的。</p>
@@ -524,7 +524,7 @@
 <p>客户端先向服务器端索要公钥，然后⽤公钥加密信息，服务器收到密⽂后，⽤⾃⼰的私钥解密。</p>
 <p>这就存在些问题，如何保证公钥不被篡改和信任度？</p>
 <p>所以这⾥就需要借助第三⽅权威机构 CA （certificate authority  数字证书认证机构），<strong>将服务器公钥放在数字证书</strong>（由数字证书认证机构颁发）中，只要证书是可信的，公钥就是可信的。</p>
-<img src="数字证书.png" style="zoom:70%;" />
+<img src="@source/posts/数字证书.png" style="zoom:70%;" />
 <p>通过数字证书的⽅式保证服务器公钥的身份，解决冒充的⻛险。</p>
 <h3 id="名词总结" tabindex="-1"><a class="header-anchor" href="#名词总结" aria-hidden="true">#</a> 名词总结</h3>
 <ol>
@@ -683,7 +683,7 @@
 <li><strong>复用TCP的丢包问题</strong>：HTTP/2 多个请求复⽤⼀个TCP连接，⼀旦发⽣丢包，就会阻塞住所有的 HTTP 请求。</li>
 </ul>
 <p>这都是基于 TCP 传输层的问题，所以 HTTP/3 把 HTTP 下层的 TCP 协议改成了 UDP！</p>
-<img src="http3.0.png" style="zoom:70%;" />
+<img src="@source/posts/http3.0.png" style="zoom:70%;" />
 <blockquote>
 <p>⼤家都知道 UDP 是不可靠传输的，但基于 UDP 的 <strong>QUIC</strong> 协议 可以实现类似 TCP 的可靠性传输。</p>
 <p>QUIC 有⾃⼰的⼀套机制可以保证传输的可靠性的。当某个流发⽣丢包时，只会阻塞这个流，其他流不会受到</p>
@@ -733,9 +733,9 @@
 </blockquote>
 <h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2>
 <p>如下为HTTP协议族的网络协议层架构：</p>
-<img src="http123.png" style="zoom:80%;" />
+<img src="@source/posts/http123.png" style="zoom:80%;" />
 <p>最后我们使用一张图来清晰的表示出 HTTP 协议的发展变化：</p>
-<img src="http-all.png" style="zoom:48%;" />
+<img src="@source/posts/http-all.png" style="zoom:48%;" />
 <h1 id="参考链接" tabindex="-1"><a class="header-anchor" href="#参考链接" aria-hidden="true">#</a> 参考链接</h1>
 <p><a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener noreferrer">超文本传输协议 - 维基百科，自由的百科全书<ExternalLinkIcon/></a></p>
 <p><a href="https://www.ruanyifeng.com/blog/2016/08/http.html" target="_blank" rel="noopener noreferrer">HTTP 协议入门<ExternalLinkIcon/></a></p>

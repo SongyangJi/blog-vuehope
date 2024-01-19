@@ -38,7 +38,7 @@
 <p>MySQL对底层页面的一次原子性的访问成为一个Mini-Transaction（MTR）</p>
 <p>一个MTR产生多个redo日志。</p>
 <p>之所以把它成为迷你的一个事务，是因为在进行崩溃恢复的时候需要把这一组redo日志作为一个不可分割的整体来处理。</p>
-<img src="mtr.png" style="zoom:30%;" />
+<img src="@source/posts/mtr.png" style="zoom:30%;" />
 <h2 id="redo日志的管理" tabindex="-1"><a class="header-anchor" href="#redo日志的管理" aria-hidden="true">#</a> redo日志的管理</h2>
 <h3 id="log-block" tabindex="-1"><a class="header-anchor" href="#log-block" aria-hidden="true">#</a> log block</h3>
 <p>redo日志放在大小为512字节的log block 中。每一个block被分为 3 部分：</p>

@@ -207,7 +207,7 @@
 <li>E类地址：前四位是1111，保留为以后使用。</li>
 </ul>
 <p>其中，ABC三类地址为单播地址（unicast),用于一对一通信，是最常用的。</p>
-<img src="ip-addr.png" style="zoom:45%;" />
+<img src="@source/posts/ip-addr.png" style="zoom:45%;" />
 <p><strong>说明</strong></p>
 <ol>
 <li>

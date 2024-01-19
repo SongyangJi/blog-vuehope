@@ -306,7 +306,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可见，在该成员中包含了所有文件操作相关的函数指针。</p>
 <p>每一个打开的文件都对应于一个file结构体，在该结构体中，f_flags描述了文件标志，f_pos描述了文件的偏移位置，而在f_path中有含有一个指向一个inode结点的指针。</p>
 <p>因此可以知道，文件表项的数据结构就是file结构体，而在实际上内核中也并不存在这样一张文件表，只是每个打开的文件都对应一个file结构体，也就是一个文件表项，**打开文件描述符表struct file fd_array[NR_OPEN_DEFAULT]**数组中的每一项都会指向这样一个文件表项，如下图所示：</p>
-<img src="fd2.png" style="zoom:80%;" />
+<img src="@source/posts/fd2.png" style="zoom:80%;" />
 <h2 id="inode" tabindex="-1"><a class="header-anchor" href="#inode" aria-hidden="true">#</a> Inode</h2>
 <p>第三种数据结构就是inode节点，在<strong>include/linux/fs.h</strong>中找到其定义如下：</p>
 <div class="language-c line-numbers-mode" data-ext="c"><pre v-pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">inode</span> <span class="token punctuation">{</span>

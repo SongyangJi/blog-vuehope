@@ -36,7 +36,7 @@
 <p>除此之外，还有一类重要的 DNS 服务器，叫做<strong>本地 DNS 服务器</strong>。本地 DNS 服务器严格来说不在 DNS 服务器的层次结构中，但它对 DNS 层次结构是很重要的。</p>
 <p>一般来说，<strong>每个网络服务提供商（ISP） 都有一台本地 DNS 服务器</strong>。<strong>当主机与某个 ISP 相连时，该 ISP 提供一台主机的 IP 地址，该主机具有一台或多台其本地 DNS 服务器的 IP 地址</strong>。主机的本地 DNS 服务器通常和主机距离较近，<strong>当主机发起 DNS 请求时，该请求被发送到本地 DNS 服务器，它起着代理的作用，并将该请求转发到 DNS 服务器层次结构中</strong>。</p>
 <h2 id="举例" tabindex="-1"><a class="header-anchor" href="#举例" aria-hidden="true">#</a> 举例</h2>
-<img src="dns2.png" style="zoom:30%;" />
+<img src="@source/posts/dns2.png" style="zoom:30%;" />
 <p>我们以一个例子来了解 DNS 的工作原理，假设主机 A（IP 地址为 abc.xyz.edu） 想知道主机 B 的 IP 地址 （def.mn.edu）。</p>
 <ol>
 <li>主机 A 首先<strong>向它的本地 DNS 服务器发送一个 DNS 查询报文</strong>。该查询报文含有被转换的主机名 def.mn.edu</li>
@@ -239,7 +239,7 @@
 <blockquote>
 <p>如果 DHCP 服务器和客户端不是在同⼀个局域⽹内，路由器⼜不会转发⼴播包，那不是每个⽹络都要配⼀个 DHCP 服务器？</p>
 </blockquote>
-<img src="dhcp.png" style="zoom:60%;" />
+<img src="@source/posts/dhcp.png" style="zoom:60%;" />
 <p>所以，为了解决这⼀问题，就出现了 <strong>DHCP中继代理</strong>。有了 DHCP 中继代理以后，对不同⽹段的 <strong>IP</strong> 地址分配也可以由⼀个 <strong>DHCP</strong> 服务器统⼀进⾏管理。DHCP 客户端会向 DHCP 中继代理发送 DHCP 请求包，⽽ <strong>DHCP 中继代理在收到这个⼴播包以后，再以单播的形式发给 DHCP 服务器</strong>。</p>
 <p>服务器端收到该包以后再向 DHCP 中继代理返回应答，并由 DHCP 中继代理将此包⼴播给 DHCP 客户端 。</p>
 <p>因此，DHCP 服务器即使不在同⼀个链路上也可以实现统⼀分配和管理IP地址。</p>

@@ -48,7 +48,7 @@
 <ol start="3">
 <li>table列</li>
 </ol>
-<p>这一列显示了对应行正在访问查询的表名，如果查询使用了别名，那么这里显示的是别名，如果不涉及对数据表的操作，那么这显示为null，如果显示为尖括号括起来的<derived N>就表示这个是临时表，后边的N就是执行计划中的id，表示结果来自于这个查询产生。如果是尖括号括起来的&lt;union M,N&gt;，与<derived N>类似，也是一个临时表，表示这个结果来自于union查询的id为M,N的结果集。</p>
+<p>这一列显示了对应行正在访问查询的表名，如果查询使用了别名，那么这里显示的是别名，如果不涉及对数据表的操作，那么这显示为null，如果显示为尖括号括起来的<code v-pre>&lt;derived N&gt;</code>就表示这个是临时表，后边的N就是执行计划中的id，表示结果来自于这个查询产生。如果是尖括号括起来的<code v-pre>&lt;union M,N&gt;</code>，与<code v-pre>&lt;derived N&gt;</code>类似，也是一个临时表，表示这个结果来自于union查询的id为M,N的结果集。</p>
 <ol start="4">
 <li><strong>type列</strong></li>
 </ol>

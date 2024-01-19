@@ -1,7 +1,7 @@
 <template><div><h1 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h1>
 <p>Redis是一个内存数据库，所有的数据将保存在内存中，这与传统的MySQL、Oracle、SqlServer等关系型数据库直接把数据保存到硬盘相比，Redis的读写效率非常高。但是保存在内存中也有一个很大的缺陷，一旦断电或者宕机，内存数据库中的内容将会全部丢失。为了弥补这一缺陷，Redis提供了把内存数据持久化到硬盘文件，以及通过备份文件来恢复数据的功能，即Redis持久化机制。</p>
 <p>Redis支持两种方式的持久化：RDB快照和AOF。</p>
-<img src="summary.jpeg" alt="img" style="zoom:60%;" />
+<img src="@source/posts/summary.jpeg" alt="img" style="zoom:60%;" />
 <h1 id="rdb" tabindex="-1"><a class="header-anchor" href="#rdb" aria-hidden="true">#</a> RDB</h1>
 <p>RDB快照用官方的话来说：RDB持久化方案是按照指定时间间隔对你的数据集生成的<strong>时间点快照</strong>（point-to-time snapshot）。</p>
 <p>它<strong>以紧缩的二进制文件保存Redis数据库某一时刻所有数据对象的内存快照</strong>，可用于Redis的数据<strong>备份</strong>、<strong>转移</strong>与<strong>恢复</strong>。到目前为止，仍是官方的默认支持方案。</p>
@@ -109,7 +109,7 @@ save ""
 <p><code v-pre>rdbSave</code>是真正执行持久化的方法，它在执行时存在大量的I/O、计算操作，耗时、CPU占用较大，<strong>在Redis的单线程模型中持久化过程会持续占用线程资源</strong>，<strong>进而导致Redis无法提供其他服务</strong>。</p>
 <p>为了解决这一问题Redis在rdbSaveBackground中fork出子进程，由子进程完成持久化工作，避免了占用父进程过多的资源。</p>
 <p>整体流程可以总结为：创建并打开临时文件、Redis内存数据写入临时文件、临时文件写入磁盘、临时文件重命名为正式RDB文件、更新持久化状态信息（dirty、lastsave）。其中“Redis内存数据写入临时文件”最为核心和复杂，写入过程直接体现了RDB文件的文件格式，本着一图胜千言的理念，我按照源码流程绘制了下图。</p>
-<img src="rdbsave.png" style="zoom:30%;" />
+<img src="@source/posts/rdbsave.png" style="zoom:30%;" />
 <h1 id="aof" tabindex="-1"><a class="header-anchor" href="#aof" aria-hidden="true">#</a> AOF</h1>
 <p>RDB是一种时间点（point-to-time）快照，适合数据备份及灾难恢复，由于工作原理的“先天性缺陷”无法保证实时性持久化，这对于缓存丢失零容忍的系统来说是个硬伤，于是就有了AOF。</p>
 <h2 id="aof原理" tabindex="-1"><a class="header-anchor" href="#aof原理" aria-hidden="true">#</a> AOF原理</h2>

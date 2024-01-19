@@ -643,7 +643,7 @@
 <p>在<strong>前驱为head</strong>时，尝试获取同步状态（调用tryAcquire）,如果获取到同步状态，则退出自旋；</p>
 <p>否则进入阻塞（调用parkAndCheckInterrupt）。</p>
 <p>再它被唤醒的时候再次进行上面的尝试，一直这样循环下去。</p>
-<img src="aqs-acquire.png" alt="aqs-acquire" style="zoom:50%;" />
+<img src="@source/posts/aqs-acquire.png" alt="aqs-acquire" style="zoom:50%;" />
 <ul>
 <li>以独占不响应中断的模式获取同步状态</li>
 </ul>

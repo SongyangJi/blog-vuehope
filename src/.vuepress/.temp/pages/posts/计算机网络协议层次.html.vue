@@ -1,5 +1,5 @@
 <template><div><h1 id="osi七层模型" tabindex="-1"><a class="header-anchor" href="#osi七层模型" aria-hidden="true">#</a> OSI七层模型</h1>
-<img src="osi.png" alt="image.png" style="zoom:60%;" />
+<img src="@source/posts/osi.png" alt="image.png" style="zoom:60%;" />
 <p>OSI 模型全称为开放式通信系统互连参考模型，是国际标准化组织 ( ISO ) 提出的一个试图使各种计算机在世界范围内互连为网络的标准框架。</p>
 <p>OSI 将计算机网络体系结构划分为七层，每一层实现各自的功能和协议，并完成与相邻层的接口通信。</p>
 <p>OSI 的服务定义详细说明了各层所提供的服务。某一层的服务就是该层及其下各层的一种能力，它通过接口提供给更高一层。各层所提供的服务与这些服务是怎么实现的无关。</p>
