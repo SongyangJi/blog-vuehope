@@ -1,4 +1,4 @@
-<template><div><img src="redis_mget.png" alt="redis_mget" style="zoom:50%;" />
+<template><div><img src="@source/posts/redis_mget.png" alt="redis_mget" style="zoom:50%;" />
 <img src="@source/posts/redis_pipeline.png" alt="redis_pipeline" style="zoom:50%;" />
 <ul>
 <li>

@@ -1,5 +1,5 @@
 <template><div><p><strong>文章结构</strong></p>
-<img src="overview2.jpg" style="zoom:50%;" />
+<img src="@source/posts/overview2.jpg" style="zoom:50%;" />
 <h1 id="redis的数据类型和底层数据结构" tabindex="-1"><a class="header-anchor" href="#redis的数据类型和底层数据结构" aria-hidden="true">#</a> Redis的数据类型和底层数据结构</h1>
 <p><strong>Redis 数据结构并不是指 String（字符串）对象、List（列表）对象、Hash（哈希）对象、Set（集合）对象和 Zset（有序集合）对象，因为这些是 Redis 键值对中值的数据类型，也就是数据的保存形式，这些对象的底层实现的方式就用到了数据结构</strong>。</p>
 <figure><img src="@source/posts/overview1.jpg" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
@@ -25,7 +25,7 @@
 <li>dictEntry 结构，表示哈希表节点的结构，结构里存放了 <strong>void * key 和 void * value 指针， *key 指向的是 String 对象，而 *value 则可以指向 String 对象，也可以指向集合类型的对象，比如 List 对象、Hash 对象、Set 对象和 Zset 对象</strong>。</li>
 </ul>
 <p>特别说明下，void * key 和 void * value 指针指向的是 <strong>Redis 对象</strong>，Redis 中的每个对象都由 redisObject 结构表示，如下图：</p>
-<img src="redis_object.jpg" style="zoom:70%;" />
+<img src="@source/posts/redis_object.jpg" style="zoom:70%;" />
 <p>对象结构里包含的成员变量：</p>
 <ul>
 <li>type，标识该对象是什么类型的对象（String 对象、 List 对象、Hash 对象、Set 对象和 Zset 对象）；</li>

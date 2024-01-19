@@ -87,14 +87,14 @@ LOCK TABLES T WRITE; # 表级别的写锁
 <p>所谓幻读，就是一个事务向另一个事务读范围中插入了一条记录，然后另一个事务就读到了“幻行”（虽然说MVCC的一致性读很大程度上可以避免，但是彻底避免幻读就需要使用gap lock）。</p>
 </li>
 </ul>
-<img src="gap-lock.png" style="zoom:50%;" />
+<img src="@source/posts/gap-lock.png" style="zoom:50%;" />
 <p>如上图，再给7上间隙锁的时候，其他事务无法向(5,7)之间插入行记录。这就是<strong>锁住间隙</strong>的作用。</p>
 <ul>
 <li><strong>Next-key Lock</strong></li>
 </ul>
 <p>临键锁，官方叫它”LOCK_ORDINARY“,从这个英文名字就可以看出。</p>
 <p>这个锁才是正常使用的加的行锁。</p>
-<img src="next-key-lock.png" style="zoom:50%;" />
+<img src="@source/posts/next-key-lock.png" style="zoom:50%;" />
 <p>如上，临键锁实际上记录锁和间隙锁的合体。给某个记录加上临键锁，实际上锁住了这条记录和它前面的间隙。</p>
 <p>所以说临键锁是”左开右闭“的。</p>
 <h1 id="innodb锁的内存结构" tabindex="-1"><a class="header-anchor" href="#innodb锁的内存结构" aria-hidden="true">#</a> InnoDB锁的内存结构</h1>
@@ -108,7 +108,7 @@ LOCK TABLES T WRITE; # 表级别的写锁
 <li>等待状态一样</li>
 <li>被加锁的记录在同一个页面中</li>
 </ul>
-<img src="lock-structure.png" style="zoom:30%;" />
+<img src="@source/posts/lock-structure.png" style="zoom:30%;" />
 <ul>
 <li>
 <p><strong>锁所在的事务信息</strong>：无论表级锁还是行级锁，都是属于一个事务的，这里记载着属于这个事务的信息。</p>

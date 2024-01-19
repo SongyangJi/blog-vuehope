@@ -158,7 +158,7 @@ InnoDB中的行级锁有下面几种概念， 共同实现了行锁这个语义�
   
   所谓幻读，就是一个事务向另一个事务读范围中插入了一条记录，然后另一个事务就读到了“幻行”（虽然说MVCC的一致性读很大程度上可以避免，但是彻底避免幻读就需要使用gap lock）。 
 
-<img src="gap-lock.png" style="zoom:50%;" />
+<img src="./gap-lock.png" style="zoom:50%;" />
 
 如上图，再给7上间隙锁的时候，其他事务无法向(5,7)之间插入行记录。这就是**锁住间隙**的作用。
 
@@ -172,7 +172,7 @@ InnoDB中的行级锁有下面几种概念， 共同实现了行锁这个语义�
 
 
 
-<img src="next-key-lock.png" style="zoom:50%;" />
+<img src="./next-key-lock.png" style="zoom:50%;" />
 
 如上，临键锁实际上记录锁和间隙锁的合体。给某个记录加上临键锁，实际上锁住了这条记录和它前面的间隙。
 
@@ -199,7 +199,7 @@ InnoDB中的行级锁有下面几种概念， 共同实现了行锁这个语义�
 
 
 
-<img src="lock-structure.png" style="zoom:30%;" />
+<img src="./lock-structure.png" style="zoom:30%;" />
 
 
 

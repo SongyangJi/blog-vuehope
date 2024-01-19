@@ -294,7 +294,7 @@
 <span class="token comment">//        get(lockAsync(leaseTime, unit));</span>
     <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如上代码，就是加锁的全过程。先调用<code v-pre>tryAcquire</code>来获取锁，如果返回值ttl为空，则证明加锁成功，返回；如果不为空，则证明加锁失败。这时候，它会订阅这个锁的Channel，等待锁释放的消息，然后重新尝试获取锁。流程如下：</p>
-<img src="lock1.webp" style="zoom:60%;" />
+<img src="@source/posts/lock1.webp" style="zoom:60%;" />
 <p>获取锁的过程是怎样的呢？接下来就要看<code v-pre>tryAcquire</code>方法。在这里，它有两种处理方式，一种是带有过期时间的锁，一种是不带过期时间的锁。</p>
 <h3 id="获取互斥状态" tabindex="-1"><a class="header-anchor" href="#获取互斥状态" aria-hidden="true">#</a> 获取互斥状态</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>
@@ -363,7 +363,7 @@
 <li><strong>通过hexists判断，如果锁已存在，并且锁的是当前线程，则证明是重入锁，加锁成功</strong></li>
 <li><strong>如果锁已存在，但锁的不是当前线程，则证明有其他线程持有锁。返回当前锁的过期时间，加锁失败</strong></li>
 </ul>
-<img src="lock2.webp" style="zoom:60%;" />
+<img src="@source/posts/lock2.webp" style="zoom:60%;" />
 <p>最后再概括一下<code v-pre>Redisson</code>中实现<code v-pre>red lock</code>算法使用的<code v-pre>HASH</code>数据类型：</p>
 <ul>
 <li><code v-pre>KEY</code>代表的就是资源或者锁，<strong>创建、存在性判断，延长生存周期和删除操作总是针对<code v-pre>KEY</code>进行的</strong></li>
@@ -439,7 +439,7 @@
 <p><strong>若剩余次数小于0，删除key并发布锁释放的消息，解锁成功</strong></p>
 </li>
 </ol>
-<img src="unlock.webp" style="zoom:60%;" />
+<img src="@source/posts/unlock.webp" style="zoom:60%;" />
 <h2 id="redisson的锁总结" tabindex="-1"><a class="header-anchor" href="#redisson的锁总结" aria-hidden="true">#</a> Redisson的锁总结</h2>
 <p><code v-pre>Redisson</code>中的<code v-pre>red lock</code>实现，应用到下面的核心技术：</p>
 <ul>

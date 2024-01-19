@@ -43,7 +43,7 @@ Buffer Pool 对应的一大块内存被划分一个又一个页面，页面大�
 
 
 
-<img src="innodb-buffer.png" style="zoom:35%;" />
+<img src="./innodb-buffer.png" style="zoom:35%;" />
 
 
 
@@ -61,7 +61,7 @@ MySQL的做法并不特殊，使用一条链表将空闲也组织起来。
 
 红色对应的空闲的控制块，蓝色对应的是相应的缓冲页。
 
-<img src="free.png" style="zoom:40%;" />
+<img src="./free.png" style="zoom:40%;" />
 
 
 

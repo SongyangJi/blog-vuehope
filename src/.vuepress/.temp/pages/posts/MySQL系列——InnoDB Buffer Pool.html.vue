@@ -9,14 +9,14 @@
 <p>由于这些缓冲业本身较大，如果已过用户的调整可能更大，不便于直接管理。于是为每个缓冲页创建一个控制块，</p>
 <p>每个控制块包含该页所属的表空间编号、页号、缓冲页在Buffer Pool 中的地址等关键信息。</p>
 <p>每个控制块的所占用的内存大小是一致的，大概只有16KB的5%左右（aka 800个字节）。</p>
-<img src="innodb-buffer.png" style="zoom:35%;" />
+<img src="@source/posts/innodb-buffer.png" style="zoom:35%;" />
 <h2 id="free-链表" tabindex="-1"><a class="header-anchor" href="#free-链表" aria-hidden="true">#</a> free 链表</h2>
 <p>缓冲页一开始都为空（逻辑上的空），随着从磁盘读取数据会逐渐使用buffer pool中的页。</p>
 <p>如何区分这些空闲的页和非空闲的页呢？</p>
 <p>MySQL的做法并不特殊，使用一条链表将空闲也组织起来。</p>
 <p>具体的数据结构，下面的图说的很清楚了。</p>
 <p>红色对应的空闲的控制块，蓝色对应的是相应的缓冲页。</p>
-<img src="free.png" style="zoom:40%;" />
+<img src="@source/posts/free.png" style="zoom:40%;" />
 <h2 id="flush-链表" tabindex="-1"><a class="header-anchor" href="#flush-链表" aria-hidden="true">#</a> flush 链表</h2>
 <p>读缓存的逻辑比较简单，就是把磁盘中的页读到内存中（不过还要设计缓冲页的淘汰问题）。</p>
 <p>写缓存呢？</p>

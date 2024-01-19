@@ -407,7 +407,7 @@ public RedissonLock(CommandAsyncExecutor commandExecutor, String name) {
 
 
 
-<img src="lock1.webp" style="zoom:60%;" />
+<img src="./lock1.webp" style="zoom:60%;" />
 
 
 
@@ -508,7 +508,7 @@ private <T> RFuture<Long> tryAcquireAsync(long waitTime, long leaseTime, TimeUni
 
 
 
-<img src="lock2.webp" style="zoom:60%;" />
+<img src="./lock2.webp" style="zoom:60%;" />
 
 
 
@@ -599,7 +599,7 @@ protected RFuture<Boolean> unlockInnerAsync(long threadId) {
 3. **若剩余次数还大于0，则证明当前锁是重入锁，刷新过期时间；**
 4. **若剩余次数小于0，删除key并发布锁释放的消息，解锁成功**
 
-<img src="unlock.webp" style="zoom:60%;" />
+<img src="./unlock.webp" style="zoom:60%;" />
 
 
 

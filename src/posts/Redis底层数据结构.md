@@ -11,7 +11,7 @@ tags:
 
 **文章结构**
 
-<img src="overview2.jpg" style="zoom:50%;" />
+<img src="./overview2.jpg" style="zoom:50%;" />
 
 
 
@@ -69,7 +69,7 @@ void * key 和 void * value 指针，分别指向了实际的键对象和值对�
 
 
 
-<img src="redis_object.jpg" style="zoom:70%;" />
+<img src="./redis_object.jpg" style="zoom:70%;" />
 
 
 

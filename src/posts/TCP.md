@@ -271,7 +271,7 @@ FSM通过解释协议可以处于的所有不同状态、可以在每个状态�
 
 另附一张图：
 
-<img src="tcp-state.jpg" style="zoom:60%;" />
+<img src="./tcp-state.jpg" style="zoom:60%;" />
 
 
 
@@ -391,7 +391,7 @@ FSM通过解释协议可以处于的所有不同状态、可以在每个状态�
 
 
 
-<img src="avoid-old-duplicate-CR.jpg" style="zoom:50%;" />
+<img src="./avoid-old-duplicate-CR.jpg" style="zoom:50%;" />
 
 
 
@@ -424,7 +424,7 @@ TCP 协议的通信双方， 都必须维护一个「序列号」， 序列号�
 
 
 
-<img src="4and3way.jpg" style="zoom:50%;" />
+<img src="./4and3way.jpg" style="zoom:50%;" />
 
 
 
@@ -444,7 +444,7 @@ TCP 协议的通信双方， 都必须维护一个「序列号」， 序列号�
 
 如果客户端的 `SYN` 阻塞了，重复发送多次 `SYN` 报文，那么服务器在收到请求后就会**建立多个冗余的无效链接，造成不必要的资源浪费。**
 
-<img src="2-way.jpg" alt="img" style="zoom:50%;" />
+<img src="./2-way.jpg" alt="img" style="zoom:50%;" />
 
 
 
@@ -512,7 +512,7 @@ TCP 协议的通信双方， 都必须维护一个「序列号」， 序列号�
 
 
 
-<img src="4way.png" style="zoom:50%;" />
+<img src="./4way.png" style="zoom:50%;" />
 
 
 
@@ -580,7 +580,7 @@ TCP 协议的通信双方， 都必须维护一个「序列号」， 序列号�
 
 
 
-<img src="timewait1.png" style="zoom:50%;" />
+<img src="./timewait1.png" style="zoom:50%;" />
 
 
 
@@ -614,7 +614,7 @@ TCP 协议的通信双方， 都必须维护一个「序列号」， 序列号�
 
 
 
-<img src="timewait2.png" style="zoom:50%;" />
+<img src="./timewait2.png" style="zoom:50%;" />
 
 
 

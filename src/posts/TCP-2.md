@@ -59,7 +59,7 @@ TCP 会在以下两种情况发⽣超时重传：
 
 
 
-<img src="rtt.png" style="zoom:60%;" />
+<img src="./rtt.png" style="zoom:60%;" />
 
 
 
@@ -107,7 +107,7 @@ RTT 就是数据从⽹络⼀端传送到另⼀端所需的时间，也就是包�
 
 RFC6289 建议使⽤以下的公式计算 RTO：
 
-<img src="rto.png" style="zoom:50%;" />
+<img src="./rto.png" style="zoom:50%;" />
 
 
 
@@ -123,7 +123,7 @@ TCP 还有另外⼀种快速重传（**Fast Retransmit**）机制，它**不以�
 
 
 
-<img src="fast-retransmission.png" style="zoom:80%;" />
+<img src="./fast-retransmission.png" style="zoom:80%;" />
 
 
 
@@ -216,7 +216,7 @@ TCP 还有另外⼀种快速重传（**Fast Retransmit**）机制，它**不以�
 
 
 
-<img src="sum-ack.png" style="zoom:80%;" />
+<img src="./sum-ack.png" style="zoom:80%;" />
 
 
 
@@ -321,7 +321,7 @@ TCP 头⾥有⼀个字段叫 Window ，也就是窗⼝⼤⼩。
 
 
 
-<img src="window-closed.png" style="zoom:67%;" />
+<img src="./window-closed.png" style="zoom:67%;" />
 
 
 

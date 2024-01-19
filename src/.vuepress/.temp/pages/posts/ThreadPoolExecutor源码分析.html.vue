@@ -1,5 +1,5 @@
 <template><div><h1 id="executorservice" tabindex="-1"><a class="header-anchor" href="#executorservice" aria-hidden="true">#</a> ExecutorService</h1>
-<img src="Executor.png" alt="Executor" style="zoom:50%;" />
+<img src="@source/posts/Executor.png" alt="Executor" style="zoom:50%;" />
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent</span><span class="token punctuation">;</span>
 <span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Executor</span> <span class="token punctuation">{</span>
     <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token class-name">Runnable</span> command<span class="token punctuation">)</span><span class="token punctuation">;</span>

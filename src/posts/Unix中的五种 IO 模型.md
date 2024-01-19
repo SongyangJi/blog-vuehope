@@ -28,7 +28,7 @@ IO模型的选择在Linux网络编程中十分重要，在Unix/Linux环境中主
 
 
 
-<img src="blockread.png" style="zoom:40%;" />
+<img src="./blockread.png" style="zoom:40%;" />
 
 
 

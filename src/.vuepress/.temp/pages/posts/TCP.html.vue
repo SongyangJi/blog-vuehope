@@ -238,7 +238,7 @@ LAST_ACK：等待所有分组死掉</p>
 </blockquote>
 <figure><img src="@source/posts/tcpfsm.jpg" alt="img" tabindex="0" loading="lazy"><figcaption>img</figcaption></figure>
 <p>另附一张图：</p>
-<img src="tcp-state.jpg" style="zoom:60%;" />
+<img src="@source/posts/tcp-state.jpg" style="zoom:60%;" />
 <h1 id="tcp三次握手" tabindex="-1"><a class="header-anchor" href="#tcp三次握手" aria-hidden="true">#</a> TCP三次握手</h1>
 <h2 id="三次握手的过程" tabindex="-1"><a class="header-anchor" href="#三次握手的过程" aria-hidden="true">#</a> 三次握手的过程</h2>
 <p><strong>图示</strong></p>
@@ -303,7 +303,7 @@ LAST_ACK：等待所有分组死掉</p>
 <p><em>The principle reason for the three-way handshake is to prevent old duplicate connection initiations from causing confusion.</em></p>
 <p>简单来说，三次握手的<strong>首要原因是为了防止旧的重复连接初始化造成混乱。</strong></p>
 <p>网络环境是错综复杂的，往往并不是如我们期望的一样，先发送的数据包，就先到达目标主机，相反可能会由于网络拥堵等原因，会使得旧的数据包，先到达目标主机，那么这种情况下 TCP 三次握手是如何避免的呢？</p>
-<img src="avoid-old-duplicate-CR.jpg" style="zoom:50%;" />
+<img src="@source/posts/avoid-old-duplicate-CR.jpg" style="zoom:50%;" />
 <p>客户端连续发送多次 SYN 建立连接的报文，在网络拥堵等情况下：</p>
 <ul>
 <li>一个旧 SYN 报文比最新的 SYN  报文早到达了服务端；</li>
@@ -324,13 +324,13 @@ LAST_ACK：等待所有分组死掉</p>
 <li>可以标识发送出去的数据包中， 哪些是已经被对方收到的；</li>
 </ul>
 <p>可见，序列号在 TCP 连接中占据着非常重要的作用，所以当客户端发送携带「初始序列号」的 <code v-pre>SYN</code> 报文的时候，需要服务端回一个 <code v-pre>ACK</code> 应答报文，表示客户端的 SYN 报文已被服务端成功接收，那当服务端发送「初始序列号」给客户端的时候，依然也要得到客户端的应答回应，<strong>这样一来一回，才能确保双方的初始序列号能被可靠的同步。</strong></p>
-<img src="4and3way.jpg" style="zoom:50%;" />
+<img src="@source/posts/4and3way.jpg" style="zoom:50%;" />
 <p>四次握手其实也能够可靠的同步双方的初始化序号，但由于<strong>第二步和第三步可以优化成一步</strong>，所以就成了「三次握手」。</p>
 <p>而两次握手只保证了一方的初始序列号能被对方成功接收，没办法保证双方的初始序列号都能被确认接收。</p>
 <h3 id="避免资源浪费" tabindex="-1"><a class="header-anchor" href="#避免资源浪费" aria-hidden="true">#</a> 避免资源浪费</h3>
 <p>如果只有「两次握手」，当客户端的 <code v-pre>SYN</code> 请求连接在网络中阻塞，客户端没有接收到 <code v-pre>ACK</code> 报文，就会重新发送 <code v-pre>SYN</code> ，由于没有第三次握手，服务器不清楚客户端是否收到了自己发送的建立连接的 <code v-pre>ACK</code> 确认信号，所以每收到一个 <code v-pre>SYN</code> 就只能先主动建立一个连接，这会造成什么情况呢？</p>
 <p>如果客户端的 <code v-pre>SYN</code> 阻塞了，重复发送多次 <code v-pre>SYN</code> 报文，那么服务器在收到请求后就会<strong>建立多个冗余的无效链接，造成不必要的资源浪费。</strong></p>
-<img src="2-way.jpg" alt="img" style="zoom:50%;" />
+<img src="@source/posts/2-way.jpg" alt="img" style="zoom:50%;" />
 <p>即两次握手会造成消息滞留情况下，服务器重复接受无用的连接请求 <code v-pre>SYN</code> 报文，而造成重复分配资源。</p>
 <h3 id="回归本质的回答" tabindex="-1"><a class="header-anchor" href="#回归本质的回答" aria-hidden="true">#</a> 回归本质的回答</h3>
 <p>这个问题的本质是, 信道不可靠, 每个包能到达跟下一个包能到达没有什么必然的联系。</p>
@@ -369,7 +369,7 @@ LAST_ACK：等待所有分组死掉</p>
 <p>客户端在经过 2MSL ⼀段时间后，⾃动进⼊ CLOSED 状态，⾄此客户端也完成连接的关闭。</p>
 <p><strong>你可以看到，每个⽅向都需要⼀个 FIN 和⼀个 ACK，因此通常被称为四次挥⼿。</strong></p>
 <p><strong>图示</strong></p>
-<img src="4way.png" style="zoom:50%;" />
+<img src="@source/posts/4way.png" style="zoom:50%;" />
 <p><strong>双⽅都可以主动断开连接</strong>，断开连接后主机中的<em>资源</em>将被释放。</p>
 <p>这⾥⼀点需要注意是：主动关闭连接的，才有 <strong>TIME_WAIT</strong> 状态。</p>
 <h2 id="常见问题" tabindex="-1"><a class="header-anchor" href="#常见问题" aria-hidden="true">#</a> 常见问题</h2>
@@ -404,7 +404,7 @@ LAST_ACK：等待所有分组死掉</p>
 <p>闭；</p>
 <p><strong>原因1:防⽌旧连接的数据包</strong></p>
 <p>假设 TIME-WAIT 没有等待时间或时间过短，被延迟的数据包抵达后会发⽣什么呢？</p>
-<img src="timewait1.png" style="zoom:50%;" />
+<img src="@source/posts/timewait1.png" style="zoom:50%;" />
 <ul>
 <li>
 <p>如上图⻩⾊框框服务端在关闭连接之前发送的 SEQ = 301 报⽂，被⽹络延迟了。</p>
@@ -423,7 +423,7 @@ LAST_ACK：等待所有分组死掉</p>
 </blockquote>
 <p>也就是说，TIME-WAIT 作⽤是<strong>等待⾜够的时间以确保最后的ACK能让被动关闭⽅接收</strong>，从⽽帮助其正常关闭。</p>
 <p>假设 TIME-WAIT 没有等待时间或时间过短，断开连接会造成什么问题呢？</p>
-<img src="timewait2.png" style="zoom:50%;" />
+<img src="@source/posts/timewait2.png" style="zoom:50%;" />
 <ul>
 <li>
 <p>如上图红⾊框框客户端四次挥⼿的最后⼀个 ACK 报⽂如果在⽹络中被丢失了，此时如果客户端 TIME-WAIT 过短或没有，则就直接进⼊了 CLOSED 状态了，那么服务端则会⼀直处在 LASE_ACK 状态。</p>

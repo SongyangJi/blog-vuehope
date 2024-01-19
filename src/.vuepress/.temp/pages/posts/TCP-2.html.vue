@@ -39,7 +39,7 @@
 <p>确认应答丢失</p>
 </li>
 </ol>
-<img src="rtt.png" style="zoom:60%;" />
+<img src="@source/posts/rtt.png" style="zoom:60%;" />
 <p>RTT （Round-Trip Time 往返时延）</p>
 <p>RTT 就是数据从⽹络⼀端传送到另⼀端所需的时间，也就是包的往返时间。</p>
 <p>超时重传时间是以 RTO （Retransmission Timeout 超时重传时间）表示。</p>
@@ -60,12 +60,12 @@
 <li>除了采样 RTT，还要采样 <strong>RTT 的波动范围</strong>，这样就避免如果 RTT 有⼀个⼤的波动的话，很难被发现的情况。</li>
 </ul>
 <p>RFC6289 建议使⽤以下的公式计算 RTO：</p>
-<img src="rto.png" style="zoom:50%;" />
+<img src="@source/posts/rto.png" style="zoom:50%;" />
 <p>如果超时重发的数据，<strong>再次超时的时候，⼜需要重传的时候，TCP 的策略是超时间隔加倍</strong>。</p>
 <p>也就是每当遇到⼀次超时重传的时候，都会将下⼀次超时时间间隔设为先前值的两倍。两次超时，就说明⽹络环境差，不宜频繁反复发送。</p>
 <h3 id="快速重传" tabindex="-1"><a class="header-anchor" href="#快速重传" aria-hidden="true">#</a> 快速重传</h3>
 <p>TCP 还有另外⼀种快速重传（<strong>Fast Retransmit</strong>）机制，它<strong>不以时间为驱动，⽽是以数据驱动重传</strong>。</p>
-<img src="fast-retransmission.png" style="zoom:80%;" />
+<img src="@source/posts/fast-retransmission.png" style="zoom:80%;" />
 <blockquote>
 <p>在上图，发送⽅发出了 1，2，3，4，5 份数据：</p>
 <ol>
@@ -111,7 +111,7 @@ UDP 只有一个 socket 接收缓冲区，没有 socket 发送缓冲区，即只
 <p><strong>窗⼝的实现实际上是操作系统开辟的⼀个缓存空间</strong>，<strong>发送⽅主机在等到确认应答返回之前，必须在缓冲区中保留已发送的数据</strong>。<strong>如果按期收到确认应答，此时数据就可以从缓存区清除</strong>。</p>
 <p>前面我们假定了发送窗⼝和接收窗⼝是不变的，但是实际上，发送窗⼝和接收窗⼝中所存放的字节数，都是放在操作系统内存缓冲区中的，⽽<strong>操作系统的缓冲区，会被操作系统调整</strong>。</p>
 <p><strong>当应⽤进程没办法及时读取缓冲区的内容时，也会对我们的缓冲区造成影响</strong>。</p>
-<img src="sum-ack.png" style="zoom:80%;" />
+<img src="@source/posts/sum-ack.png" style="zoom:80%;" />
 <p>图中的 ACK 600 确认应答报⽂丢失，也没关系，因为可以通过下⼀个确认应答进⾏确认，只要发送⽅收到了 ACK</p>
 <p>700 确认应答，就意味着 700 之前的所有数据「接收⽅」都收到了。这个模式就叫<strong>累计确认</strong>或者<strong>累计应答</strong>。</p>
 <h3 id="窗口大小的协商" tabindex="-1"><a class="header-anchor" href="#窗口大小的协商" aria-hidden="true">#</a> 窗口大小的协商</h3>
@@ -152,7 +152,7 @@ UDP 只有一个 socket 接收缓冲区，没有 socket 发送缓冲区，即只
 <p><strong>窗⼝关闭潜在的危险</strong></p>
 <p><strong>接收⽅向发送⽅通告窗⼝⼤⼩时，是通过 ACK 报⽂来通告的</strong>。</p>
 <p>那么，当发⽣窗⼝关闭时，接收⽅处理完数据后，会向发送⽅通告⼀个窗⼝⾮ 0 的 ACK 报⽂，如果这个通告窗⼝的 ACK 报⽂在⽹络中丢失了，那麻烦就⼤了。</p>
-<img src="window-closed.png" style="zoom:67%;" />
+<img src="@source/posts/window-closed.png" style="zoom:67%;" />
 <p>这会导致<strong>发送⽅⼀直等待接收⽅的⾮ 0 窗⼝通知</strong>，接收⽅也⼀直等待发送⽅的数据，如不采取措施，这种相互等待的过程，会造成了死锁的现象。</p>
 <p>为了解决这个问题，TCP 为每个连接设有⼀个持续定时器，只要 <strong>TCP</strong> 连接⼀⽅收到对⽅的零窗⼝通知，就启动持续计时器。</p>
 <p>如果持续计时器超时，就会发送窗⼝探测 <strong>( Window probe )</strong> 报⽂，⽽对⽅在确认这个探测报⽂时，给出⾃⼰现在的接收窗⼝⼤⼩。</p>

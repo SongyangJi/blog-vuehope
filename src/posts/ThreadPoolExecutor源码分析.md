@@ -12,7 +12,7 @@ tags:
 
 
 
-<img src="Executor.png" alt="Executor" style="zoom:50%;" />
+<img src="./Executor.png" alt="Executor" style="zoom:50%;" />
 
 
 

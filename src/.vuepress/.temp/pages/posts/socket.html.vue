@@ -1,5 +1,5 @@
 <template><div><h2 id="socket编程" tabindex="-1"><a class="header-anchor" href="#socket编程" aria-hidden="true">#</a> socket编程</h2>
-<img src="socket-state.png" style="zoom:50%;" />
+<img src="@source/posts/socket-state.png" style="zoom:50%;" />
 <ol>
 <li>
 <p>服务端和客户端初始化 socket ，得到⽂件描述符；</p>

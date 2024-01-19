@@ -12,7 +12,7 @@ tags:
 
 ## socket编程
 
-<img src="socket-state.png" style="zoom:50%;" />
+<img src="./socket-state.png" style="zoom:50%;" />
 
 
 
